@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Lista de Compras</title>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Minhas Listas de Compras</h1>
+            <button id="nova-lista">+ Nova Lista</button>
+        </header>
+        
+        <div class="listas-container">
+            <!-- Listas salvas aparecerão aqui -->
+        </div>
+        
+        <div class="lista-ativa" id="lista-ativa">
+            <h2 id="nome-lista-ativa">Nova Lista</h2>
+            <input type="text" id="nome-lista-input" placeholder="Nome da lista">
+            
+            <div class="adicionar-item">
+                <input type="text" id="novo-item" placeholder="Digite um item">
+                <button id="adicionar-item">Adicionar</button>
+            </div>
+            
+            <ul id="itens-lista">
+                <!-- Itens da lista aparecerão aqui -->
+            </ul>
+            
+            <div class="acoes-lista">
+                <button id="salvar-lista">Salvar Lista</button>
+                <button id="limpar-lista">Limpar Tudo</button>
+                <button id="compartilhar-lista">Compartilhar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
